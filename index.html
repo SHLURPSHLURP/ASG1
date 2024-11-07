@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>repl.it</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    /* Container for the split layout */
+    .container {
+      display: flex;
+      width: 80%;
+    }
+
+    /* Split layout for the two sides */
+    .split {
+      flex: 1;
+      display: flex;
+      padding: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      width: 85%;
+      text-align: center;
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      
+      .split img {
+        height: auto;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="container">
+    <div class="split">
+      <img src="https://picsum.photos/600/400" alt="Random Image">
+    </div>
+    <div class="split">
+      <div>
+        <h2>This is a pretty awesome heading</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+          dolore iure ab veniam fugit perspiciatis dicta sapiente, eaque, velit
+          cupiditate consequuntur dolorum nobis vel. Consequatur voluptas
+          commodi omnis totam vero.
+        </p>
+        <a href="#" class="button">Let's Go!</a>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
