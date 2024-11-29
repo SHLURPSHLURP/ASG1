@@ -24,23 +24,22 @@
                         </a>
                     </li>
 
-                    <li><a href="machines.html">Machines</a></li>
+                    <li><a href="machinesAndStandard.html">Machines</a></li>
                     <li><a href="protagonists.html">Protagonists</a></li>
                     <li><a href="contactUs.html">Contact Us</a></li>
-                    <li><a href="https://store.steampowered.com/app/524220/NieRAutomata/" target="_blank">Download</a></li>
-                    <li><button onclick="toggleMute('cityRuinsMusic')">Mute/Unmute</button></li>
+                    <li><a href="https://store.steampowered.com/app/524220/NieRAutomata/" target="_blank">Download</a></li> <!--takes you to external page in another tab-->
+                    <li><button onclick="toggleMute('cityRuinsMusic')">Mute/Unmute</button></li> <!--button for sound mute/unmute-->
                 </ul> 
 
             </nav>
 
-            <audio id="cityRuinsMusic" autoplay mute loop>
-                <source src="audio/cityRuinsMusic.mp3" type="audio/mp3">
+            <audio id="cityRuinsMusic" autoplay muted loop>
+                <source src="audio/cityRuinsMusic.mp3" type="audio/mp3"> <!--background music, will autoplay and loop-->
             </audio>
 
 
-
             <video id="trailerVideo" controls> 
-                <source src="videos/nierAutomataTrailer.mp4" type="video/mp4">
+                <source src="videos/nierAutomataTrailer.mp4" type="video/mp4"> <!--trailer video, will not autoplay-->
             </video>
 
         
@@ -85,12 +84,6 @@
             </ul>
 
             <p><em>*Not full list. For full list see <a href="https://nier.fandom.com/wiki/NieR:Automata_Ver1.1a" target="_blank">here</a></em></p>
-
-
-
-
-
-
 
     </body>
 
