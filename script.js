@@ -1,5 +1,4 @@
-function toggleMute() {
-    var video = document.getElementById("trailerVideo");
-    
-    // Toggle the muted property
-    video.muted = !video.muted;}
+function toggleMute(cityRuinsMusic) {
+    var audio = document.getElementById("cityRuinsMusic");
+    audio.muted = !audio.muted;
+}
