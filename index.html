@@ -15,36 +15,46 @@
 
         <!--navigation bar-->
             <nav>
-
-                <ul>
-
+                <ul class="navList">
                     <li> <!--takes you to homepage-->
                         <a href="index.html">
-                            <img src="images/nierAutomataLogo.jpg" alt="NieR:Automata Logo">
+                            <img src="images/nierAutomataLogo.jpg" alt="NieR:Automata Logo" id="logo">
                         </a>
                     </li>
-
-                    <li><a href="machinesAndStandard.html">Machines</a></li>
-                    <li><a href="protagonists.html">Protagonists</a></li>
-                    <li><a href="contactUs.html">Contact Us</a></li>
-                    <li><a href="https://store.steampowered.com/app/524220/NieRAutomata/" target="_blank">Download</a></li> <!--takes you to external page in another tab-->
-                    <li><button onclick="toggleMute('cityRuinsMusic')">Mute/Unmute</button></li> <!--button for sound mute/unmute-->
+                    <li><a href="machinesAndStandard.html" class="textLink">Machines</a></li>
+                    <li><a href="protagonists.html" class="textLink">Protagonists</a></li>
+                    <li><a href="contactUs.html" class="textLink">Contact Us</a></li>
+                    <li><a href="https://store.steampowered.com/app/524220/NieRAutomata/" target="_blank" class="textLink">Download</a></li> <!--takes you to external page in another tab-->
+                    <li><button onclick="toggleMute('cityRuinsMusic')"><img src="images/sound.png"></button></li> <!--button for sound mute/unmute-->
                 </ul> 
+
+                <audio id="cityRuinsMusic" autoplay muted loop>
+                    <source src="audio/cityRuinsMusic.mp3" type="audio/mp3"> <!--background music, will autoplay and loop-->
+                </audio>
 
             </nav>
 
-            <audio id="cityRuinsMusic" autoplay muted loop>
-                <source src="audio/cityRuinsMusic.mp3" type="audio/mp3"> <!--background music, will autoplay and loop-->
-            </audio>
 
 
-            <video id="trailerVideo" controls> 
+            <video id="trailerVideo" autoplay muted loop> 
                 <source src="videos/nierAutomataTrailer.mp4" type="video/mp4"> <!--trailer video, will not autoplay-->
             </video>
 
         
 
-            <h1>NieR:Automata</h1>
+            <div id="storyPara">
+                <p id="storyText"><em>"The distant future, 5012.
+                The sudden aerial invasion of Earth by Aliens and
+                their creations Machine Lifeforms led mankind to the brink of extinction.
+                The surviving number of humans who took refuge on the moon to organize a counterattack using
+                android soldiers to recapture Earth
+                However, the war reaches a stalemate as the Machine Lifeforms continue to multiply infinitely.
+                In turn, humanity deploys anew unit of android soldiers as an ultimate weapon: YoRHa.
+                Newly dispatched to Earth 2B joins 9S, the analyst currently stationed there,
+                where amid their mission, they encounter a myriad of mysterious phenomena...</em></p>
+                
+                <p id="storyText"><em>This is the story of these lifeless androids and their endless fight for the sake of mankind."</em></p>
+            </div>
 
             <p>A 2017 action role-playing game developed by PlatinumGames and published by Square Enix. It is a sequel to Nier (2010), itself a spin-off of and sequel to the Drakengard series.</p>
 
@@ -56,21 +66,8 @@
 
             <p>Combat uses a real-time action-based hack and slash system, using both light and heavy attacks and combining them into different combination attacks. The player can also evade incoming attacks, gaining invulnerability or counterattack bonuses based on timing. The player is assisted by a flying "Pod" robot which launches customizable ranged attacks varying from simple gunfire to heavy-hitting hammer attacks.</p>
 
-            <h2>Story</h2>
-
-            <p>The distant future, 5012.
-                The sudden aerial invasion of Earth by Aliens and
-                their creations Machine Lifeforms led mankind to the brink of extinction.
-                The surviving number of humans who took refuge on the moon to organize a counterattack using
-                android soldiers to recapture Earth
-                However, the war reaches a stalemate as the Machine Lifeforms continue to multiply infinitely.
-                In turn, humanity deploys anew unit of android soldiers as an ultimate weapon: YoRHa.
-                Newly dispatched to Earth 2B joins 9S, the analyst currently stationed there,
-                where amid their mission, they encounter a myriad of mysterious phenomena...</p>
-                
-                <p>This is the story of these lifeless androids and their endless fight for the sake of mankind.</p>
-
-            <h3>Credits</h3>
+           
+            <h2>Credits</h2>
 
             <ul>
                 <li>Original Work: NieR:Automata (Square Enix)</li>

@@ -1,0 +1,96 @@
+/*general styles*/
+body{background-color:black;
+    color:white;
+
+
+}
+
+
+
+@media (max-width:1920px){
+    .navList{
+        display: flex; /*make the nav bar flexible*/
+        flex-direction: row; /*align items left to right*/
+        justify-content: space-between; 
+        height: 40px; /*height of nav bar*/
+        width:100%;
+        align-items: center; /*align elements to the middle of the nav bar*/
+        list-style-type: none; /*remove bullet points*/
+        position:fixed;
+        background:black;
+        z-index:1000;
+        top:0;
+        left: 0;
+        padding: 0 5px;
+        margin: 0;
+
+        
+    }
+
+
+    .navList li a{ /* text links in nav bar*/
+        display: flex;
+        color: white;
+        text-decoration: none;
+        font-size:15px;
+        display: inline-block;
+    }
+
+    .navList li .textLink:hover{ /*colour of text link when mouse hover*/
+        color:darkgrey; 
+    }
+
+    .navList button{ /*audio button*/
+       background: none;
+       border: none;
+    }
+
+    .navList img{ /*audio button*/
+      height: 20px;
+      width: auto;
+    }
+
+    .navList img:hover{
+        transform: scale(1.2); /* Scale the text to make it larger when mouse hovers*/
+    }
+
+    .navList li a img #logo:hover{
+        color:aliceblue;
+    }
+
+    #logo{ /*logo- placed below .navList img as it is also an img*/
+     height:30px;
+     width: auto;
+    }
+
+    video{ /*width of video to fit 100% width of screen*/
+     width:100%;
+    }
+}
+
+#storyPara{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 100px;
+    margin-bottom:100px;
+    font-size:30px;
+}
+
+
+
+
+
+
+
+
+
+/*hide scrollbar- taken from google search*/
+
+html {
+    overflow-y: scroll; /* Enables scrolling */
+    scrollbar-width: none; /* Firefox: Hides scrollbar */
+}
+
+html::-webkit-scrollbar {
+    display: none; /* Chrome, Safari: Hides scrollbar */
+}
