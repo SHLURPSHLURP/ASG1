@@ -1,5 +1,6 @@
 /*general styles*/
-html body{background-color:white;
+html body{
+    background-color:white;
     color:black;
     height: 100%;
     padding-top: 40px;
@@ -137,6 +138,42 @@ html body{background-color:white;
 
 
 /*MACHINEANDSTANDARD, SPECIALUNITS HTML STYLING*/
+
+    #machines-and-standard{
+        padding-left: 200px; /*so the nav bar doesnt hide the content*/
+    }
+
+
+/*SIDE NAVIGATION BAR, FOR ALL HTML FILES EXCEPT INDEX AND CONTACT US*/
+
+    .side-nav-bar{
+        display: flex; /*make the nav bar flexible*/
+        flex-direction: column; /*align items top down*/
+        justify-content: center; 
+        height:100%; /*height of nav bar*/
+        width:100px;
+        align-items: center; /*align elements to the middle of the nav bar*/
+        list-style-type: none; /*remove bullet points*/
+        
+        position:fixed; /*so its "sticky" at the side*/
+        background:black;
+        z-index:1000; /*so its above all other elements*/
+
+        top:0;
+        left: 0;
+        padding: 0 40px;
+        margin-top:40px;
+
+
+        
+    }
+
+    .side-nav-bar-img{
+        width: 150px;
+    }
+
+
+
 
 
 
