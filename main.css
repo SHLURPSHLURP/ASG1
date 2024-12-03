@@ -1,14 +1,18 @@
 /*general styles*/
-body{background-color:black;
-    color:white;
+html body{background-color:white;
+    color:black;
+    height: 100%;
+    min-height:100;
+    flex-grow: 1;
 
 
 }
 
 
+/*for desktop*/
 
 @media (max-width:1920px){
-    .navList{
+    .nav-list{
         display: flex; /*make the nav bar flexible*/
         flex-direction: row; /*align items left to right*/
         justify-content: space-between; 
@@ -16,19 +20,18 @@ body{background-color:black;
         width:100%;
         align-items: center; /*align elements to the middle of the nav bar*/
         list-style-type: none; /*remove bullet points*/
-        position:fixed;
+        position:fixed; /*so its "sticky" at the top*/
         background:black;
-        z-index:1000;
+        z-index:1000; /*so its above all other elements*/
         top:0;
         left: 0;
         padding: 0 5px;
         margin: 0;
-
         
     }
 
 
-    .navList li a{ /* text links in nav bar*/
+    .nav-list li a{ /* text links in nav bar*/
         display: flex;
         color: white;
         text-decoration: none;
@@ -36,26 +39,26 @@ body{background-color:black;
         display: inline-block;
     }
 
-    .navList li .textLink:hover{ /*colour of text link when mouse hover*/
+    .nav-list li .textLink:hover{ /*colour of text link when mouse hovers*/
         color:darkgrey; 
     }
 
-    .navList button{ /*audio button*/
+    .nav-list button{ /*audio button*/
        background: none;
        border: none;
     }
 
-    .navList img{ /*audio button*/
+    .nav-list img{ /*audio button*/
       height: 20px;
       width: auto;
     }
 
-    .navList img:hover{
-        transform: scale(1.2); /* Scale the text to make it larger when mouse hovers*/
+    .nav-list img:hover{
+        transform: scale(1.2); /* scale the text to make it larger when mouse hovers*/
     }
 
-    .navList li a img #logo:hover{
-        color:aliceblue;
+    #logo:hover{ /*so the logo doesnt scale bigger when mouse hovers as it looks weirddd*/
+        transform: scale(1);
     }
 
     #logo{ /*logo- placed below .navList img as it is also an img*/
@@ -68,20 +71,59 @@ body{background-color:black;
     }
 }
 
-#storyPara{
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-top: 100px;
-    margin-bottom:100px;
-    font-size:30px;
+#story-para{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 80px;
+    margin-bottom:80px;
+    font-size:25px;
+}
+
+.game-img{
+    width:100%
+}
+
+#game-play-text{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom:50px;
+
+}
+
+#credit-text{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    font-size:12px;
+    padding:25px
+
+  
+}
+
+#credit-text li{
+    margin-right:20px;
+    margin-bottom: 6px;
+    white-space: nowrap;
+
 }
 
 
 
+.copyright{
+    font-size:12px;
+}
 
 
-
-
+footer{
+    color:white;
+    background-color: black;
+    bottom:0;
+    left: 0;
+    padding: 20px;
+    margin: 0;
+    margin-top:auto;
+}
 
 
 /*hide scrollbar- taken from google search*/

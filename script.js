@@ -1,4 +1,4 @@
-function toggleMute(cityRuinsMusic) {
-    var audio = document.getElementById("cityRuinsMusic");
+function toggleMute() {
+    var audio = document.getElementById("city-ruins-music");
     audio.muted = !audio.muted;
 }
