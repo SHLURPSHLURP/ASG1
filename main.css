@@ -149,9 +149,8 @@ html body{
     .side-nav-bar{
         display: flex; /*make the nav bar flexible*/
         flex-direction: column; /*align items top down*/
-        justify-content: center; 
         height:100%; /*height of nav bar*/
-        width:100px;
+        width:150px;
         align-items: center; /*align elements to the middle of the nav bar*/
         list-style-type: none; /*remove bullet points*/
         
@@ -161,15 +160,37 @@ html body{
 
         top:0;
         left: 0;
-        padding: 0 40px;
+        padding:0;
         margin-top:40px;
-
-
         
     }
 
+    .nav-img-container{
+        position: relative; 
+        width: 150px; 
+        height: 150px; 
+        display: flex;
+        flex-direction: column; /* top to bottom */
+        justify-content: center; 
+        align-items: center; /* Horizontally center the content */
+        margin-bottom: 5px; /*space between*/
+    }
+
+    .overlay-text {
+        position: absolute; 
+        bottom: 13px; 
+        left: 50%; /* center text horizontally */
+        transform: translateX(-50%); /* adjust to center the text exactly */
+        color: white; 
+        font-size: 15px; 
+        text-decoration: none; 
+        white-space: nowrap; /* prevent text from wrapping */
+    }
+
     .side-nav-bar-img{
-        width: 150px;
+        width: 120px;
+        height:auto;
+        object-fit:cover;
     }
 
 
