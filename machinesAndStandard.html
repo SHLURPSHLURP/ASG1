@@ -14,27 +14,27 @@
     <body>
 
         <!--navigation bar-->
-            <nav>
-                <ul class="noBulletPoints">
+        <nav>
+            <ul class="nav-list">
+                <li> <!--takes you to homepage-->
+                    <a href="index.html">
+                        <img src="images/nierAutomataLogo.jpg" alt="NieR:Automata Logo" id="logo">
+                    </a>
+                </li>
+                <li><a href="machinesAndStandard.html" class="text-link">Machines</a></li>
+                <li><a href="protagonists.html" class="text-link">Protagonists</a></li>
+                <li><a href="contactUs.html" class="text-link">Contact Us</a></li>
+                <li><a href="https://store.steampowered.com/app/524220/NieRAutomata/" target="_blank" class="textLink">Download</a></li> <!--takes you to external page in another tab-->
+                <li><button onclick="toggleMute('cityRuinsMusic')"><img src="images/sound.png" id="sound-button"></button></li> <!--button for sound mute/unmute-->
+            </ul> 
 
-                    <li> <!--takes you to homepage-->
-                        <a href="index.html">
-                            <img src="images/nierAutomataLogo.jpg" alt="NieR:Automata Logo">
-                        </a>
-                    </li>
-
-                    <li><a href="machinesAndStandard.html">Machines</a></li>
-                    <li><a href="protagonists.html">Protagonists</a></li>
-                    <li><a href="contactUs.html">Contact Us</a></li>
-                    <li><a href="https://store.steampowered.com/app/524220/NieRAutomata/" target="_blank">Download</a></li> <!--takes you to external page in another tab-->
-                    <li><button onclick="toggleMute('cityRuinsMusic')"><img src="images/sound.png"></button></li> <!--button for sound mute/unmute-->
-                </ul> 
-
-            </nav>
-
-            <audio id="cityRuinsMusic" autoplay muted loop>
+            <audio id="city-ruins-music" autoplay muted loop>
                 <source src="audio/cityRuinsMusic.mp3" type="audio/mp3"> <!--background music, will autoplay and loop-->
             </audio>
+
+        </nav>
+
+
 
             <nav class="noBulletPoints"> <!--side navigation bar-->
                 <ul>
@@ -95,7 +95,24 @@
                 <li>A small handful of non-hostile Goliath Bipeds are encountered throughout the story, such as Ernst, a Machine village resident, and Father Servo's penultimate form. Despite being described as a colony of Machines rather than a singular entity, none of the non-hostile Goliath Bipeds encountered behave as such, instead acting as a single organism.</li>
             </ul>
 
+            <footer>
 
+                <ul id="credit-text">
+                    <li>Original Work: NieR:Automata (Square Enix)</li>
+                    <li>Director: Ryoji Masuyama</li>
+                    <li>Series Composition: YOKO TARO/Ryoji Masuyama</li>
+                    <li>Character Design/Chief Animation Director: Jun Nakai</li>
+                    <li>Action Director/Prop Design: Shun Tachibana</li>
+                    <li>CG Action Director/Blender Supervisor: Masaki Inada</li>
+                    <li>Blender Supervisor: Takahiro Kawakoshi[</li>
+                    <li>2D Works: Mie Hiraga</li>
+                </ul>
+
+
+                <p class="copyright">© SQUARE ENIX</p>
+                <p class="copyright">Square Enix Limited, Registered in England No. 01804186 - Registered office: 240 Blackfriars Road, London, SE1 8NW.</p>
+
+            </footer>
 
 
 

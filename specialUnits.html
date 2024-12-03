@@ -14,45 +14,42 @@
     <body>
 
         <!--navigation bar-->
-            <nav>
+        <nav>
+            <ul class="nav-list">
+                <li> <!--takes you to homepage-->
+                    <a href="index.html">
+                        <img src="images/nierAutomataLogo.jpg" alt="NieR:Automata Logo" id="logo">
+                    </a>
+                </li>
+                <li><a href="machinesAndStandard.html" class="text-link">Machines</a></li>
+                <li><a href="protagonists.html" class="text-link">Protagonists</a></li>
+                <li><a href="contactUs.html" class="text-link">Contact Us</a></li>
+                <li><a href="https://store.steampowered.com/app/524220/NieRAutomata/" target="_blank" class="textLink">Download</a></li> <!--takes you to external page in another tab-->
+                <li><button onclick="toggleMute('cityRuinsMusic')"><img src="images/sound.png" id="sound-button"></button></li> <!--button for sound mute/unmute-->
+            </ul> 
 
-                <ul class="noBulletPoints">
-
-                    <li> <!--takes you to homepage-->
-                        <a href="index.html">
-                            <img src="images/nierAutomataLogo.jpg" alt="NieR:Automata Logo">
-                        </a>
-                    </li>
-
-                    <li><a href="machinesAndStandard.html">Machines</a></li>
-                    <li><a href="protagonists.html">Protagonists</a></li>
-                    <li><a href="contactUs.html">Contact Us</a></li>
-                    <li><a href="https://store.steampowered.com/app/524220/NieRAutomata/" target="_blank">Download</a></li> <!--takes you to external page in another tab-->
-                    <li><button onclick="toggleMute('cityRuinsMusic')"><img src="images/sound.png"></button></li> <!--button for sound mute/unmute-->
-                </ul> 
-
-            </nav>
-
-            <audio id="cityRuinsMusic" autoplay muted loop>
+            <audio id="city-ruins-music" autoplay muted loop>
                 <source src="audio/cityRuinsMusic.mp3" type="audio/mp3"> <!--background music, will autoplay and loop-->
             </audio>
 
-            <nav> <!--side navigation bar-->
-                <ul class="noBulletPoints">
-                    <li><a href="standard.html">Standard</a></li>
-                    <li><a href="specialUnits.html">Special Units</a></li>
-                </ul>
-            </nav>
+        </nav>
 
-            <h1>Special Units Machines and Intel</h1>
-            <p><em>*Note: This list does not include all special units machines in the game.</em></p>
-            
+        <nav> <!--side navigation bar-->
             <ul class="noBulletPoints">
+                <li><a href="standard.html">Standard</a></li>
+                <li><a href="specialUnits.html">Special Units</a></li>
+            </ul>
+        </nav>
+
+        <h1>Special Units Machines and Intel</h1>
+        <p><em>*Note: This list does not include all special units machines in the game.</em></p>
+            
+        <ul class="noBulletPoints">
                 <li><a href='#simone'>Simone</li>
                 <li><a href='#ko-shi-ro-shi'>Ko-Shi & Ro-Shi </a></li>
                 <li><a href='#immanuel'>Immanuel</a></li>
                 <li><a href='#friedrich'>Friedrich</a></li>
-            </ul>
+        </ul>
 
             
     
@@ -131,7 +128,24 @@
 
             <h3>Extra Info</h3>
             <p>He is probably named after either Friedrich Nietzsche or Karl Wilhelm Friedrich von Schlegel. The latter is usually cited as "Friedrich Schlegel" and had a brother named August.</p>
-        
+            <footer>
+
+                <ul id="credit-text">
+                    <li>Original Work: NieR:Automata (Square Enix)</li>
+                    <li>Director: Ryoji Masuyama</li>
+                    <li>Series Composition: YOKO TARO/Ryoji Masuyama</li>
+                    <li>Character Design/Chief Animation Director: Jun Nakai</li>
+                    <li>Action Director/Prop Design: Shun Tachibana</li>
+                    <li>CG Action Director/Blender Supervisor: Masaki Inada</li>
+                    <li>Blender Supervisor: Takahiro Kawakoshi[</li>
+                    <li>2D Works: Mie Hiraga</li>
+                </ul>
+
+
+                <p class="copyright">© SQUARE ENIX</p>
+                <p class="copyright">Square Enix Limited, Registered in England No. 01804186 - Registered office: 240 Blackfriars Road, London, SE1 8NW.</p>
+
+            </footer>        
 
     </body>
 

@@ -2,8 +2,9 @@
 html body{background-color:white;
     color:black;
     height: 100%;
-    min-height:100;
-    flex-grow: 1;
+    padding-top: 40px;
+   
+    
 
 
 }
@@ -12,6 +13,8 @@ html body{background-color:white;
 /*for desktop*/
 
 @media (max-width:1920px){
+
+/*TOP NAVIGATION BAR- ALL HTML FILES)*/
     .nav-list{
         display: flex; /*make the nav bar flexible*/
         flex-direction: row; /*align items left to right*/
@@ -26,10 +29,8 @@ html body{background-color:white;
         top:0;
         left: 0;
         padding: 0 5px;
-        margin: 0;
-        
+        margin: 0;  
     }
-
 
     .nav-list li a{ /* text links in nav bar*/
         display: flex;
@@ -39,7 +40,7 @@ html body{background-color:white;
         display: inline-block;
     }
 
-    .nav-list li .textLink:hover{ /*colour of text link when mouse hovers*/
+    .nav-list li .text-link:hover{ /*colour of text link when mouse hovers*/
         color:darkgrey; 
     }
 
@@ -66,67 +67,91 @@ html body{background-color:white;
      width: auto;
     }
 
+
+
+
+
+
+/*INDEX.HTML STYLING*/
+
     video{ /*width of video to fit 100% width of screen*/
      width:100%;
     }
+
+    #story-para{
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 80px;
+        margin-bottom:80px;
+        font-size:25px;
+    }
+
+    .game-img{
+        width:100%
+    }
+
+    #game-play-text{
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 20px;
+        margin-bottom:50px;
+
+    }
+
+
+
+
+
+/*FOOTER STYLING- FOR ALL HTML FILES*/
+
+    #credit-text{
+        display:flex;
+        flex-direction:row; /*left to right*/
+        flex-wrap:wrap; /*excess lines wrap to bottom line*/
+        font-size:12px;
+        padding:25px
+    }   
+
+    #credit-text li{
+        margin-right:20px;
+        margin-bottom: 6px;
+        white-space: nowrap; /*one line (point) doesnt wrap; one row from left to right*/
+    }
+
+    .copyright{
+        font-size:12px;
+    }
+
+    footer{
+        color:white;
+        background-color: black;
+        bottom:0;
+        left: 0;
+        padding: 20px;
+        margin: 0;
+    }
+
+
+
+
+
+
+/*MACHINEANDSTANDARD, SPECIALUNITS HTML STYLING*/
+
+
+
+
+
+
 }
 
-#story-para{
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-top: 80px;
-    margin-bottom:80px;
-    font-size:25px;
-}
-
-.game-img{
-    width:100%
-}
-
-#game-play-text{
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 20px;
-    margin-bottom:50px;
-
-}
-
-#credit-text{
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    font-size:12px;
-    padding:25px
-
-  
-}
-
-#credit-text li{
-    margin-right:20px;
-    margin-bottom: 6px;
-    white-space: nowrap;
-
-}
 
 
 
-.copyright{
-    font-size:12px;
-}
 
 
-footer{
-    color:white;
-    background-color: black;
-    bottom:0;
-    left: 0;
-    padding: 20px;
-    margin: 0;
-    margin-top:auto;
-}
 
-
-/*hide scrollbar- taken from google search*/
+/*hide scrollbar- taken from google search. FOR ALL HTML FILES*/
 
 html {
     overflow-y: scroll; /* Enables scrolling */

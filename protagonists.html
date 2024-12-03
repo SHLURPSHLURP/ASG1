@@ -14,29 +14,27 @@
     <body>
 
         <!--navigation bar-->
-            <nav>
+        <nav>
+            <ul class="nav-list">
+                <li> <!--takes you to homepage-->
+                    <a href="index.html">
+                        <img src="images/nierAutomataLogo.jpg" alt="NieR:Automata Logo" id="logo">
+                    </a>
+                </li>
+                <li><a href="machinesAndStandard.html" class="text-link">Machines</a></li>
+                <li><a href="protagonists.html" class="text-link">Protagonists</a></li>
+                <li><a href="contactUs.html" class="text-link">Contact Us</a></li>
+                <li><a href="https://store.steampowered.com/app/524220/NieRAutomata/" target="_blank" class="textLink">Download</a></li> <!--takes you to external page in another tab-->
+                <li><button onclick="toggleMute('cityRuinsMusic')"><img src="images/sound.png" id="sound-button"></button></li> <!--button for sound mute/unmute-->
+            </ul> 
 
-                <ul class="noBulletPoints">
-
-                    <li> <!--takes you to homepage-->
-                        <a href="index.html">
-                            <img src="images/nierAutomataLogo.jpg" alt="NieR:Automata Logo">
-                        </a>
-                    </li>
-                    
-                    <li><a href="machinesAndStandard.html">Machines</a></li>
-                    <li><a href="protagonists.html">Protagonists</a></li>
-                    <li><a href="contactUs.html">Contact Us</a></li>
-                    <li><a href="https://store.steampowered.com/app/524220/NieRAutomata/" target="_blank">Download</a></li> <!--takes you to external page in another tab-->
-                    <li><button onclick="toggleMute('cityRuinsMusic')"><img src="images/sound.png"></button></li> <!--button for sound mute/unmute-->
-                    
-                </ul> 
-
-            </nav>
-
-            <audio id="cityRuinsMusic" autoplay muted loop>
+            <audio id="city-ruins-music" autoplay muted loop>
                 <source src="audio/cityRuinsMusic.mp3" type="audio/mp3"> <!--background music, will autoplay and loop-->
             </audio>
+
+        </nav>
+
+
 
             <nav> <!--side navigation bar-->
                 <ul class="noBulletPoints">
@@ -134,7 +132,24 @@
                 <li>Her extended backstory during the Pearl Harbor Descent is available as an official stage play, with A2 being portrayed by the Japanese idol and actor, Ruka Endō.</li>
                 <li>In the TGS 2016 trailer, many characters of NieR: Automata were showcased along with a word/emotion that represents them the most. A2 is represented by 復讐—"revenge."</li>
             </ul>
+            <footer>
 
+                <ul id="credit-text">
+                    <li>Original Work: NieR:Automata (Square Enix)</li>
+                    <li>Director: Ryoji Masuyama</li>
+                    <li>Series Composition: YOKO TARO/Ryoji Masuyama</li>
+                    <li>Character Design/Chief Animation Director: Jun Nakai</li>
+                    <li>Action Director/Prop Design: Shun Tachibana</li>
+                    <li>CG Action Director/Blender Supervisor: Masaki Inada</li>
+                    <li>Blender Supervisor: Takahiro Kawakoshi[</li>
+                    <li>2D Works: Mie Hiraga</li>
+                </ul>
+
+
+                <p class="copyright">© SQUARE ENIX</p>
+                <p class="copyright">Square Enix Limited, Registered in England No. 01804186 - Registered office: 240 Blackfriars Road, London, SE1 8NW.</p>
+
+            </footer>
     </body>
 
 </html>
