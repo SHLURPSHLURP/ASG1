@@ -5,7 +5,6 @@
         <!--linking metadata: normalize and main css file-->
         <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="main.css">
-        <script src="script.js"></script>
 
         <title>NieR:Automata- An introduction</title>
 
@@ -37,6 +36,9 @@
 
             <nav> <!--side navigation bar-->
                 <ul class="side-nav-bar">
+
+                    <button id="toggle-nav-bar">>></button>
+
                     <li class="nav-img-container">
                         <a href="machinesAndStandard.html"><img src="images/small-stubby.jpg" alt="small stubby" class="side-nav-bar-img"></a>
                         <a href="machinesAndStandard.html" class="overlay-text">Standard</a>
@@ -47,64 +49,72 @@
                         <a href="specialUnits.html" class="overlay-text">Special Units</a>
                     </li>
 
+
                 </ul>
             </nav>
 
 
-            <h1>Standard Type Machines and Intel</h1>
-            <p><em>*Note: This list does not include all standard type machines in the game.</em></p>
-            
-            <ul class="middle-nav-bar">
-                <li><a href='#small-stubby'>Small Stubby (Basic)</li>
-                <li><a href='#multi-tier'>Multi-tier Type</a></li>
-                <li><a href='#goliath-biped'>Goliath Biped</a></li>
-            </ul>
 
-            
-    
-            <img src='images/small-stubby.jpg'id="small-stubby"> 
-            <h2>Small Stubby (Basic)</h2> 
-            <p><em>Very Common, Can be found in City Ruins.</em></p>
-        
-            <h3>Story</h3>
-            <p>"The most common of the small machine lifeforms, these units bear a similarity to spring-powered toys created by humans in the past. This was likely done for the sake of increased productivity, though machine lifeforms are built from modular parts and have many variations."</p>
-        
-            <h3>Notes</h3>
-           <ul>
-            <li>The basic small stubby is the first enemy unit the player will encounter on the ground.</li>
-            <li>It has limited functionality but can appear in small numbers and with various upgrades.</li>
-           </ul>
-            
-        
-
-            <img src="images/multi-tier-type.jpg" id='multi-tier'>
-            <h2>Multi-tier Type (Basic)</h2>
-            <p><em>Common, Can be found in City Ruins and Desert Zone.</em></p>
-        
-            <h3>Story</h3>
-            <p>"Created by stacking the bodies of multiple small stubbies, this sluggish machine lumbers ever northward and performs no proper attacks. One is left to wonder why it even exists at all."</p>
-        
-            <h3>Notes</h3>
-            <ul>
-                <li>While it's gun equipped counterpart is capable of dealing damage, this basic type will only stand and stare.</li>
+            <ul class="middle-nav-bar" id="middle-nav-bar">
+                <li><button><a href='#small-stubby'>Small Stubby (Basic)</a></button></li>
+                <li><button><a href='#multi-tier'>Multi-tier Type</a></button></li>
+                <li><button><a href='#goliath-biped'>Goliath Biped</a></button></li>
             </ul>
 
 
+            <div class="content">
 
-            <img src="images/goliathBiped.jpg" id='goliath-biped'>
-            <h2>Goliath Biped</h2>
-            <p><em>Common, Can be found in City Ruins and Desert Zone.</em></p>
+            
+                
+                <img src='images/small-stubby.jpg'id="small-stubby" class="content-img"> 
+                <div class="content-text">
+                    <h2>Small Stubby (Basic)</h2> 
+                    <p><em>Very Common, Can be found in City Ruins.</em></p>
         
-            <h3>Story</h3>
-            <p>"This humanoid, Goliath-class machine lifeform is actually a colony of smaller machines that uses their combined energy to move one massive body. The expandable side-rail arms punish all who draw close, while the liquid-fuel rocket engine on its back grants short-lived flight abilities. It also boasts powerful projectile weapons and the transport apparatuses of the linked machines that comprise it, making it a dangerous foe with no apparent weaknesses."</p>
+                    <h3>Story</h3>
+                    <p>"The most common of the small machine lifeforms, these units bear a similarity to spring-powered toys created by humans in the past. This was likely done for the sake of increased productivity, though machine lifeforms are built from modular parts and have many variations."</p>
         
-            <h3>Notes</h3>
-            <ul>
-                <li>A small handful of non-hostile Goliath Bipeds are encountered throughout the story, such as Ernst, a Machine village resident, and Father Servo's penultimate form. Despite being described as a colony of Machines rather than a singular entity, none of the non-hostile Goliath Bipeds encountered behave as such, instead acting as a single organism.</li>
-            </ul>
+                    <h3>Notes</h3>
+                    <ul>
+                        <li>The basic small stubby is the first enemy unit the player will encounter on the ground.</li>
+                        <li>It has limited functionality but can appear in small numbers and with various upgrades.</li>
+                    </ul>
+                </div>
+        
+
+                <img src="images/multi-tier-type.jpg" id='multi-tier' class="content-img">
+                <div class="content-text">    
+                    <h2>Multi-tier Type (Basic)</h2>
+                    <p><em>Common, Can be found in City Ruins and Desert Zone.</em></p>
+        
+                    <h3>Story</h3>
+                    <p>"Created by stacking the bodies of multiple small stubbies, this sluggish machine lumbers ever northward and performs no proper attacks. One is left to wonder why it even exists at all."</p>
+        
+                    <h3>Notes</h3>
+                    <ul>
+                        <li>While it's gun equipped counterpart is capable of dealing damage, this basic type will only stand and stare.</li>
+                    </ul>
+                </div>
 
 
 
+                <img src="images/goliathBiped.jpg" id='goliath-biped' class="content-img">
+                <div class="content-text">
+                    <h2>Goliath Biped</h2>
+                    <p><em>Common, Can be found in City Ruins and Desert Zone.</em></p>
+        
+                    <h3>Story</h3>
+                    <p>"This humanoid, Goliath-class machine lifeform is actually a colony of smaller machines that uses their combined energy to move one massive body. The expandable side-rail arms punish all who draw close, while the liquid-fuel rocket engine on its back grants short-lived flight abilities. It also boasts powerful projectile weapons and the transport apparatuses of the linked machines that comprise it, making it a dangerous foe with no apparent weaknesses."</p>
+        
+                    <h3>Notes</h3>
+                    <ul>
+                        <li>A small handful of non-hostile Goliath Bipeds are encountered throughout the story, such as Ernst, a Machine village resident, and Father Servo's penultimate form. Despite being described as a colony of Machines rather than a singular entity, none of the non-hostile Goliath Bipeds encountered behave as such, instead acting as a single organism.</li>
+                </ul>
+                </div>
+
+
+        </div>
+        <script src="script.js"></script>
     </body>
 
 </html>

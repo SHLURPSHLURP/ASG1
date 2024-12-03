@@ -29,7 +29,7 @@ html body{
         z-index:1000; /*so its above all other elements*/
         top:0;
         left: 0;
-        padding: 0 5px;
+        padding: 0 10px;
         margin: 0;  
     }
 
@@ -55,8 +55,13 @@ html body{
       width: auto;
     }
 
-    .nav-list img:hover{
-        transform: scale(1.2); /* scale the text to make it larger when mouse hovers*/
+    #sound-button{
+        transform: translate(-40px); /*move to the left without affecting the other elements*/
+    }
+
+
+    #sound-button:hover{
+        transform: translate(-40px) scale(1.2); /* scale the text to make it larger when mouse hovers*/
     }
 
     #logo:hover{ /*so the logo doesnt scale bigger when mouse hovers as it looks weirddd*/
@@ -140,7 +145,10 @@ html body{
 /*MACHINEANDSTANDARD, SPECIALUNITS HTML STYLING*/
 
     #machines-and-standard{
-        padding-left: 200px; /*so the nav bar doesnt hide the content*/
+        padding-left: 190px; /*so the nav bar doesnt hide the content*/
+        padding-top:24px;
+        color:white;
+        background-color:black
     }
 
 
@@ -150,7 +158,7 @@ html body{
         display: flex; /*make the nav bar flexible*/
         flex-direction: column; /*align items top down*/
         height:100%; /*height of nav bar*/
-        width:150px;
+        width:190px;
         align-items: center; /*align elements to the middle of the nav bar*/
         list-style-type: none; /*remove bullet points*/
         
@@ -172,8 +180,8 @@ html body{
         display: flex;
         flex-direction: column; /* top to bottom */
         justify-content: center; 
-        align-items: center; /* Horizontally center the content */
-        margin-bottom: 5px; /*space between*/
+        align-items: center; 
+        margin-bottom: 20px; /*space between*/
     }
 
     .overlay-text {
@@ -188,16 +196,78 @@ html body{
     }
 
     .side-nav-bar-img{
-        width: 120px;
+        width: 135px;
         height:auto;
         object-fit:cover;
     }
-
 
     .side-nav-bar-img:hover{
         transform: scale(1.1);
     }
 
+
+    #toggle-nav-bar{
+        transform: translate(70px); /*button styling*/
+    }
+
+
+
+
+/*MIDDLE NAVIGATION BAR*/
+    .middle-nav-bar{
+        list-style-type: none;
+
+        flex-direction: row;
+        align-items: center;
+        position:fixed;
+        gap:20px;
+        background-color: black;
+        width:35%;
+        height:40px;
+        z-index:1000;
+        top:5;
+
+        display:none;
+    
+     
+    }
+
+    .middle-nav-bar a{ /*text on button styling*/
+        text-decoration: none; 
+        color:black;
+
+    
+    }
+
+    .middle-nav-bar button{ /*button styling*/
+        background-color: white;
+        border-radius: 3px;
+        border: .5px solid black;
+    }
+
+    #toggle-nav-bar {
+        padding: 10px 20px;
+        background-color: rgb(23, 23, 23);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 0px; /* Space above the button */
+    }
+
+    #toggle-nav-bar:hover {
+        background-color:rgb(44, 44, 44);
+    }
+
+
+
+
+
+/*CONTENT STYLING*/
+
+.content-img{
+    width:100%;
+}
 
 
 
